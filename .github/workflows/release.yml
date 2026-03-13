@@ -23,8 +23,8 @@ jobs:
         with:
           release-type: node
 
-  update-major-tag:
-    name: Update Major Version Tag
+  update-release-tag:
+    name: Update Release Version Tag
     needs: release-please
     if: needs.release-please.outputs.release_created == 'true'
     runs-on: ubuntu-latest
