@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/carry0987/update-release-tags/compare/v1.2.0...v1.3.0) (2026-03-13)
+
+
+### Features
+
+* update README.md ([6118bd1](https://github.com/carry0987/update-release-tags/commit/6118bd1b1ee38656a8a460360fff06eb19f96987))
+
 ## [1.2.0](https://github.com/carry0987/update-release-tags/compare/v1.1.0...v1.2.0) (2026-03-13)
 
 
