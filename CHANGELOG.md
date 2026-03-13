@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/carry0987/update-release-tags/compare/v1.1.0...v1.2.0) (2026-03-13)
+
+
+### Features
+
+* add outputs ([aebf6d5](https://github.com/carry0987/update-release-tags/commit/aebf6d5d8acde512b0c0f01ed13a1777efcfdefc))
+
 ## [1.1.0](https://github.com/carry0987/update-release-tags/compare/v1.0.1...v1.1.0) (2026-03-13)
 
 
