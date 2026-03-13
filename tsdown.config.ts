@@ -5,6 +5,8 @@ export default defineConfig({
     outDir: 'dist',
     format: 'cjs',
     clean: true,
-    noExternal: [/.*/],
-    inlineOnly: false
+    deps: {
+        alwaysBundle: [/.*/],
+        onlyBundle: false
+    }
 });

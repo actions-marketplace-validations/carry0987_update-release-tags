@@ -1,6 +1,6 @@
 {
-  "name": "ts-action-starter",
-  "version": "0.0.0",
+  "name": "update-release-tag",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,11 +11,14 @@
     "lint:fix": "biome check --write ."
   },
   "dependencies": {
-    "@actions/core": "^3.0.0"
+    "@actions/core": "^3.0.0",
+    "@actions/exec": "^3.0.0",
+    "semver": "^7.7.4"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.6",
     "@types/node": "^25.5.0",
+    "@types/semver": "^7.7.1",
     "tsdown": "^0.21.2",
     "typescript": "^5.9.3",
     "vitest": "^4.1.0"

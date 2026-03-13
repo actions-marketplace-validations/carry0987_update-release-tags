@@ -1,15 +1,38 @@
-name: My Action
-description: 'TODO: Describe what your action does'
+name: Update Release Tag
+description: >
+  Automatically create or update sliding version tags (e.g. v1, v1.3) when a
+  new semver tag is pushed. Supports multi-level sliding, prerelease skipping,
+  and dry-run mode.
 
 inputs:
-  name:
-    description: 'TODO: Describe this input'
+  tag:
+    description: 'The source semver tag to slide from (e.g. v1.3.0)'
     required: true
+  levels:
+    description: 'Comma-separated tag levels to update: major, minor'
+    required: false
+    default: 'major'
+  prefix:
+    description: 'Tag prefix (e.g. v)'
+    required: false
+    default: 'v'
+  skip-prerelease:
+    description: 'Skip tag update if the source tag is a prerelease'
+    required: false
+    default: 'true'
+  dry-run:
+    description: 'Log what would be done without actually modifying tags'
+    required: false
+    default: 'false'
 
 outputs:
-  result:
-    description: 'TODO: Describe this output'
+  tags-updated:
+    description: 'Comma-separated list of tags that were created/updated'
+  commit-sha:
+    description: 'The commit SHA that the source tag points to'
+  skipped:
+    description: 'Whether the update was skipped (true/false)'
 
 runs:
-  using: node20
+  using: node24
   main: dist/index.cjs
